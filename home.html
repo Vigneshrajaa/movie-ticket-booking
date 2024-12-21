@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking Platform</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .movie-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-card .card-body {
+            text-align: center;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MovieBooking</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movie list.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container text-center py-5">
+        <h1 class="display-4">Welcome to MovieBooking</h1>
+        <p class="lead">Book tickets for your favorite movies in just a few clicks!</p>
+        <a href="movie list.html" class="btn btn-primary btn-lg">Browse Movies</a>
+    </div>
+
+    <!-- Movies Section -->
+    <div class="container" id="movies">
+        <h2 class="text-center my-4">Now Showing</h2>
+        <div class="row">
+            <!-- Movie Card -->
+            <div class="col-md-4 mb-4">
+                <div class="movie-card">
+                    <img src="https://th.bing.com/th?id=OIF.PMRoY9dWvVCW3j5DB%2ffwBA&w=295&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Movie Poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Movie Title 1</h5>
+                        <p class="card-text">Some description about the movie goes here.</p>
+                        <a href="book now.html" class="btn btn-success">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card -->
+            <div class="col-md-4 mb-4">
+                <div class="movie-card">
+                    <img src="https://www.lifewire.com/thmb/0EhbecK4_dqGJHi45gy4fiErcC8=/1575x1300/filters:no_upscale():max_bytes(150000):strip_icc()/115135696_1300x1733-5bd5d716c9e77c00513c9b2c.jpg" alt="Movie Poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Movie Title 2</h5>
+                        <p class="card-text">Some description about the movie goes here.</p>
+                        <a href="book now.html" class="btn btn-success">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card -->
+            <div class="col-md-4 mb-4">
+                <div class="movie-card">
+                    <img src="https://th.bing.com/th/id/OIP.iYNiiU7cMNJ5tfAWj0mDkAAAAA?rs=1&pid=ImgDetMain" alt="Movie Poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Movie Title 3</h5>
+                        <p class="card-text">Some description about the movie goes here.</p>
+                        <a href="book now.html" class="btn btn-success">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 MovieBooking. All rights reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
